@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.options__label {
+    padding-bottom: 20px;
+}
+
+.oprions__name-field {
+    margin-left: 20px;
+}
+
+.options__type-header {
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.options__choose-type-block {
+    display: flex;
+    gap: 30px;
+}
+
+.options__type-button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #468efa;
+}
+
+.options__type-button:hover {
+    cursor: pointer;
+}

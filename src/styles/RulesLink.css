@@ -1,0 +1,10 @@
+.link-container {
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.link-container__rules-link {
+    text-align: center;
+    font-size: 30px;
+}

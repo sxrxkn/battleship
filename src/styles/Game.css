@@ -1,0 +1,30 @@
+.game-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info__username-block {
+
+}
+
+.game-info__username {
+
+}
+
+.game-info__type {
+
+}
+
+.options__type-button {
+
+}
+
+.game-field {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.game-field__ship-container {
+    width: 50px;
+}
