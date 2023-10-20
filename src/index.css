@@ -7,6 +7,11 @@
   font-size: 20px;
 }
 
+button, a {
+  cursor: pointer;
+}
+
+
 body {
   margin: 0;
   font-family: 'Balsamiq Sans', cursive, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -24,4 +29,20 @@ code {
 main {
   width: 85%;
   margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+h3 {
+  padding: 15px 0;
+  font-size: 25px;
+
+}
+
+input:disabled, button:disabled {
+  background-color: rgb(191, 185, 185);
+  cursor: not-allowed;
 }

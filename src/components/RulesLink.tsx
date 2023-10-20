@@ -6,7 +6,10 @@ import "../styles/RulesLink.css";
 function RulesLink() {
   return (
     <div className="link-container">
-      <Link to={"/rules"} className="link-container__rules-link">
+      <Link
+        target="_blank"
+        to={"/rules"}
+        className="link-container__rules-link">
         Ознакомиться с правилами
       </Link>
     </div>

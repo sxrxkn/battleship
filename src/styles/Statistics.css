@@ -1,0 +1,27 @@
+.statistics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+  
+.statistic__item {
+    text-align: center;
+    margin: 0 20px;
+}
+  
+.statistics__battles {
+    display: block;
+    font-size: 2rem;
+    color: #7ab1eb
+}
+.statistics__win {
+    display: block;
+    font-size: 2rem;
+    color: rgb(133, 238, 133);
+}
+.statistics__lose {
+    display: block;
+    font-size: 2rem;
+    color: rgb(225, 143, 143);
+}

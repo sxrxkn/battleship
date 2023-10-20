@@ -1,0 +1,40 @@
+.ship-board__ship-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.ship-board__ship {
+    width: 20vw;
+    text-align: center;
+}
+
+.ship__selected {
+    background-color: rgb(106, 150, 237);
+    border-radius: 8px;
+}
+
+.ship-board__header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ship-board__direction-container {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+
+.ship-board__direction-button {
+    transition: transform 0.3s;
+    border: none;
+    background-color: rgb(106, 150, 237);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.ship-board__direction-button_rotate {
+    transform: rotate(90deg)
+}
