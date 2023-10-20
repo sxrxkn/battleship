@@ -1,15 +1,52 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+
+import "./index.css";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Rules from "./pages/Rules";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+import Statistics from "./pages/Statistics";
+
+import { persistStore } from "redux-persist";
+import { PersistGate } from "redux-persist/integration/react";
+
+const persistor = persistStore(store);
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>,
+  },
+  {
+    path: "/game",
+    element: <Game></Game>,
+  },
+  {
+    path: "/rules",
+    element: <Rules></Rules>,
+  },
+  {
+    path: "/statistics",
+    element: <Statistics></Statistics>,
+  },
+]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <RouterProvider router={router}></RouterProvider>
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

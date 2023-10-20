@@ -1,0 +1,11 @@
+.rules__title {
+    text-align: center;
+}
+.rules__item {
+    list-style:square;
+    padding: 15px;
+}
+
+.rules__text {
+    padding: 10px 0;
+}

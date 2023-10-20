@@ -1,0 +1,54 @@
+.game-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info__user-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+}
+
+.game-info__info {
+    padding-left: 10px;
+}
+
+.game-field {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.game-field__end-text {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    top: 30%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+}
+
+.game-field__ship-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.styled-button_restart {
+    background-color: rgb(222, 130, 130);
+}
+
+.styled-button_restart-game {
+    background-color: rgb(166, 178, 234);
+}
+
+.game-field__name {
+    padding-bottom: 10px;
+}
+.game-field__name_end {
+    text-align: end;
+}

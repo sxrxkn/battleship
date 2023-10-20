@@ -1,0 +1,32 @@
+.battleField__row {
+    display: flex;
+}
+
+.battleField__cell-container_disabled {
+    background-color: rgb(0, 0, 255);
+}
+
+.battleField__cell-container_ship-cell {
+    background-color: rgb(14, 231, 126);
+}
+
+.battleField__cell-container_select-ship {
+    background-color: rgb(126, 153, 227);
+}
+
+.letters {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 36px;
+}
+
+.field-container {
+   display: flex;
+}
+.numbers {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

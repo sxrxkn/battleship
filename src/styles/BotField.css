@@ -1,0 +1,7 @@
+.battleField__cell-container_disabled-cell {
+    background-color: blue;
+}
+
+.battleField__cell-container_destroyed-cell {
+    background-color: rgb(240, 57, 57);
+}
