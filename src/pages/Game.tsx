@@ -44,6 +44,12 @@ function Game() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    if (!type) {
+      window.location.replace("/");
+    }
+  });
+
+  useEffect(() => {
     if (countDestroyedPlayersShip === 10) {
       dispatch(updateStatisticsLoseCount());
       setResult("Вы проиграли");

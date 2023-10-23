@@ -85,6 +85,7 @@ function BattleField() {
               }}
               onClick={() => {
                 if (
+                  selectedShipSize &&
                   isFieldAvailable(
                     [row, column],
                     selectedShipSize,

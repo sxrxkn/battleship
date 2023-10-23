@@ -15,7 +15,7 @@ const initialState: GameInterface = {
   shipsInfo: [],
   direction: "column",
   didBotHit: false,
-  selectedShipSize: 0,
+  selectedShipSize: 1,
   countDestroyedPlayersShip: 0,
   isUserMove: false,
   lastSuccesBotShoot: [],

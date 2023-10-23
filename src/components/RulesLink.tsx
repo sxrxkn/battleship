@@ -5,14 +5,14 @@ import "../styles/RulesLink.css";
 
 function RulesLink() {
   return (
-    <div className="link-container">
+    <section className="link-container">
       <Link
         target="_blank"
         to={"/rules"}
         className="link-container__rules-link">
         Ознакомиться с правилами
       </Link>
-    </div>
+    </section>
   );
 }
 

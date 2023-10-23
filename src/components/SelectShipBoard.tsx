@@ -14,7 +14,7 @@ function SelectShipBoard() {
   const dispatch = useAppDispatch();
 
   return (
-    <div>
+    <section>
       <div>
         <h2 className="ship-board__header">Ваши корабли</h2>
         <div className="ship-board__direction-container">
@@ -56,7 +56,7 @@ function SelectShipBoard() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 

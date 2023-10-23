@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import Header from "../components/Header";
@@ -12,7 +12,7 @@ import { generalInfoSlice } from "../store/reducers/GeneralInfoSlice";
 function Home() {
   const { changeGameStatus, setGameType, setUserName } =
     generalInfoSlice.actions;
-  const { status } = useAppSelector((state) => state.generalInfoReducer);
+  const { status, type } = useAppSelector((state) => state.generalInfoReducer);
   const dispatch = useAppDispatch();
 
   const [name, setName] = useState("");
@@ -20,6 +20,12 @@ function Home() {
   const [isTypeSelected, selectType] = useState(false);
 
   const isButtonDisabled = name.trim() === "";
+
+  useEffect(() => {
+    if (type) {
+      window.location.replace("/game");
+    }
+  }, [type]);
 
   return (
     <main>
