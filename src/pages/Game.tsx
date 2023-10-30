@@ -146,7 +146,9 @@ function Game() {
           )}
           <BattleField></BattleField>
         </div>
-        {isPlayerWin && <p className="game-field__end-text">{isPlayerWin}</p>}
+        {isPlayerWin && status === "end" && (
+          <p className="game-field__end-text">{isPlayerWin}</p>
+        )}
         {status === "shipPlacement" && <SelectShipBoard></SelectShipBoard>}
         {(status === "game" || status === "end") && (
           <div>
